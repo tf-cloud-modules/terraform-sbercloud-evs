@@ -8,6 +8,16 @@ provider "sbercloud" {
 }
 ```
 
+## Usage
+```hcl
+module "snapshot" {
+    source  = "tf-cloud-modules/evs/sbercloud//modules/snapshot"
+
+    volume_id = "xxxx-xxxx-xxxx"
+    name      = "evs-snapshot-test"
+}
+```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
